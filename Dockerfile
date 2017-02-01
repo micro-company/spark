@@ -1,10 +1,10 @@
 FROM openjdk:8
 
-ENV SPARK_VERSION 2.0.2
-ENV SPARK_PACKAGE spark-${SPARK_VERSION}-bin-hadoop2.7
-ENV SPARK_HOME /usr/apache/${SPARK_PACKAGE}
-ENV SBT_VERSION 0.13.8
-ENV SCALA_VERSION 2.11.7
+ENV SPARK_VERSION=2.0.2 \
+    SPARK_PACKAGE=spark-2.0.2-bin-hadoop2.7 \
+    SPARK_HOME=/usr/apache/spark-2.0.2-bin-hadoop2.7 \
+    SBT_VERSION=0.13.8 \
+    SCALA_VERSION=2.11.7
 
 # Install Spark
 WORKDIR /usr/apache
