@@ -1,4 +1,4 @@
-FROM openjdk:8
+FROM openjdk:17
 
 ENV SPARK_VERSION=2.0.2 \
     SPARK_PACKAGE=spark-2.0.2-bin-hadoop2.7 \
